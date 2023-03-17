@@ -12,8 +12,8 @@ If you follow the directions in the next section, you will get the Symmetry Inde
 2. Download all the files from this repo (two .py files, .dat file, .cfg file)
 3. Download "shape_predictor_68_face_landmarks.dat" file from https://drive.google.com/file/d/1v0nGz_rvGeWp3eiJg_50-9IyLPTIoWwj/view?usp=share_link
 4. Open the directory for the current PyCharm project
-5. Copy two .dat files into the main directory
-6. Copy two .py files and .cfg file into the "venv" folder
+5. Copy "shape_predictor_68_face_landmarks.dat" into the main directory
+6. Copy two .py files, .cfg file, and "dlib-face-recognition_resnet_model_v1.dat" into the "venv" folder
 7. Create a configuration for the current projet (select the same directory for the main.py file)
 8. Install CMake Library (Python Packages on lower panel -> type CMake)
 9. Install dlib library (this step takes a while)
@@ -25,5 +25,5 @@ If you follow the directions in the next section, you will get the Symmetry Inde
 
 For path_to_folder:
 Make sure to preliminarily add the images to the folder and only assign integer names to them. The only allowed restrictions are: .jpeg and .jpg. Copy the folder path and insert it into the code. 
-For predictor = dlib.shape_predictor:
-Make sure to copy the right path for the "shape_predictor_68_face_landmarks.dat" file 
+For predictor = dlib.shape_predictor():
+Make sure to copy the right path of the "shape_predictor_68_face_landmarks.dat" file 
