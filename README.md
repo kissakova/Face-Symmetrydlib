@@ -25,5 +25,6 @@ If you follow the directions in the next section, you will get the Symmetry Inde
 
 For path_to_folder:
 Make sure to preliminarily add the images to the folder and only assign integer names to them. The only allowed restrictions are: .jpeg and .jpg. Copy the folder path and insert it into the code. 
+
 For predictor = dlib.shape_predictor():
 Make sure to copy the right path of the "shape_predictor_68_face_landmarks.dat" file 
