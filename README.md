@@ -15,3 +15,6 @@ main.py contains the face detection and symmetry index calculation code, while d
 5. Create a configuration for the current projet (select the same directory)
 6. Install CMake Library (Python Packages on lower panel -> type CMake)
 7. Install dlib library (this step takes a while)
+8.  -m pip install --upgrade pip
+9.  Install opencv-python
+10.  Install cv2
