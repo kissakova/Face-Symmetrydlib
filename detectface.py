@@ -26,29 +26,28 @@ from sklearn.metrics import recall_score
 from sklearn.metrics import precision_recall_fscore_support
 
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor('../shape_predictor_68_face_landmarks.dat')
+predictor = dlib.shape_predictor('/Users/issakovakamilla/PycharmProjects/trydetectc/shape_predictor_68_face_landmarks.dat')
+
 image = cv2.imread("/Users/issakovakamilla/Desktop/Papers/Thesis/pics/668.jpg")
-
-image = cv2.resize(image, (600,500))
-# Convert the image color to grayscale
+image = cv2.resize(image, (500, 500))
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-# Detect the face
-rects = detector(gray, 1)
-# Detect landmarks for each face
+# detect the faces
+rects = detector(gray)
+# go through the face bounding boxes
 for rect in rects:
-        # Get the landmark points
-        shape = predictor(gray, rect)
-        # Convert it to the NumPy Array
-        shape_np = np.zeros((68, 2), dtype="int")
-        for i in range(0, 68):
-            shape_np[i] = (shape.part(i).x, shape.part(i).y)
-        shape = shape_np
+# extract the coordinates of the bounding box
+    x1 = rect.left()
+    y1 = rect.top()
+    x2 = rect.right()
+    y2 = rect.bottom()
 
-        # Display the landmarks
-        for i, (x, y) in enumerate(shape):
-            # Draw the circle to mark the keypoint
-            cv2.circle(image, (x, y), 1, (0, 0, 255), -1)
+    cv2.rectangle (image, (x1, y1), (x2, y2), (0, 255, 0), 3)
 
-# Display the image
-cv2.imshow('Landmark Detection', image)
-cap.release()
+    # apply the shape predictor to the face ROI
+    shape = predictor(gray, rect)
+    for n in range (0, 68):
+        x = shape.part(n).x
+        y = shape.part(n).y
+        cv2.circle(image, (x, y), 4, (255, 0, 0), -1)
+cv2.imshow("Image", image)
+cv2. waitKey(0)
