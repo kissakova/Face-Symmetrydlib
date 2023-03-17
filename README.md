@@ -11,7 +11,7 @@ If you follow the directions in the next section, you will get the Symmetry Inde
 1. Create a new Project (File->New Project)
 2. Find VCS on the top panel -> Get from Version Control -> paste current repo's URL -> Clone
 3. Download "shape_predictor_68_face_landmarks.dat" file from https://drive.google.com/file/d/1v0nGz_rvGeWp3eiJg_50-9IyLPTIoWwj/view?usp=share_link
-4. Copy it to the same directory where all the other files are
+4. Copy it to the same directory where the "dlib-face-recognition_resnet_model_v1.dat" file is
 5. Create a configuration for the current projet (select the same directory for the main.py file)
 6. Install CMake Library (Python Packages on lower panel -> type CMake)
 7. Install dlib library (this step takes a while)
