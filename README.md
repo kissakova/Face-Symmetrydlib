@@ -18,3 +18,4 @@ main.py contains the face detection and symmetry index calculation code, while d
 8.  -m pip install --upgrade pip
 9.  Install opencv-python
 10.  Install matplotlib
+11.  Install pandas
