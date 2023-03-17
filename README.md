@@ -9,16 +9,18 @@ If you follow the directions in the next section, you will get the Symmetry Inde
 
 # How to run this code on PyCharm?
 1. Create a new Project (File->New Project)
-2. Find VCS on the top panel -> Get from Version Control -> paste current repo's URL -> Clone
+2. Download all the files from this repo (two .py files, .dat file, .cfg file)
 3. Download "shape_predictor_68_face_landmarks.dat" file from https://drive.google.com/file/d/1v0nGz_rvGeWp3eiJg_50-9IyLPTIoWwj/view?usp=share_link
-4. Copy it to the same directory where the "dlib-face-recognition_resnet_model_v1.dat" file is
-5. Create a configuration for the current projet (select the same directory for the main.py file)
-6. Install CMake Library (Python Packages on lower panel -> type CMake)
-7. Install dlib library (this step takes a while)
-8.  Run "-m pip install --upgrade pip" in terminal
-9.  Install opencv-python package
-10.  Install matplotlib package
-11.  Install pandas package
-12.  Install scikit-learn package
+4. Open the directory for the current PyCharm project
+5. Copy two .dat files into the main directory
+6. Copy two .py files and .cfg file into the "venv" folder
+7. Create a configuration for the current projet (select the same directory for the main.py file)
+8. Install CMake Library (Python Packages on lower panel -> type CMake)
+9. Install dlib library (this step takes a while)
+10.  Run "-m pip install --upgrade pip" in terminal
+11.  Install opencv-python package
+12.  Install matplotlib package
+13.  Install pandas package
+14.  Install scikit-learn package
 
 Make sure to preliminarily add the images to the folder and only assign integer names to them. The only allowed restrictions are: .jpeg and .jpg. Copy the folder path and insert it into the code. 
