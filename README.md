@@ -3,4 +3,6 @@ The current project deploys a Python dlib library to detect a face from the uplo
 
 # Important!
 Running the code requires the installation of heavy dependencies on your computer locally. Once you put all the files downloaded from the current repository on your Python environment you should be getting warning errors from the output that will require you to install packages. 
-Please, install them all. Also make sure to have both "dlib-face-recognition_resnet_model_v1.dat" and "shape_predictor_68_face_landmarks.dat" in the same directory as your main.py file. main.py contains the face detection and symmetry index calculation code, while detectface.py returns the picture with allocated landmarks.
+Please, install them all. Also make sure to have both "dlib-face-recognition_resnet_model_v1.dat" and "shape_predictor_68_face_landmarks.dat" in the same directory as your main.py file. Since the secon .dat file is too heavy, please download it from https://drive.google.com/file/d/1v0nGz_rvGeWp3eiJg_50-9IyLPTIoWwj/view?usp=share_link.
+
+main.py contains the face detection and symmetry index calculation code, while detectface.py returns the picture with allocated landmarks.
