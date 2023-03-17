@@ -17,4 +17,4 @@ main.py contains the face detection and symmetry index calculation code, while d
 7. Install dlib library (this step takes a while)
 8.  -m pip install --upgrade pip
 9.  Install opencv-python
-10.  Install cv2
+10.  Install matplotlib
