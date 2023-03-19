@@ -28,7 +28,7 @@ from sklearn.metrics import precision_recall_fscore_support
 detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor('/Users/issakovakamilla/PycharmProjects/trydetectc/shape_predictor_68_face_landmarks.dat')
 
-image = cv2.imread("/Users/issakovakamilla/Desktop/Papers/Thesis/pics/668.jpg")
+image = cv2.imread('/Users/issakovakamilla/Desktop/Papers/Thesis/pics/668.jpg')
 image = cv2.resize(image, (500, 500))
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 # detect the faces
